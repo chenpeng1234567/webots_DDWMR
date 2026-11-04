@@ -1,0 +1,31 @@
+# Compiled controllers and intermediate files
+*.exe
+*.o
+*.obj
+*.d
+*.dll
+*.so
+*.dylib
+controllers/*/build/
+
+# Local runs and source backups
+controllers/*/logs/
+controllers/*/backups/
+controllers/my_controller/data.txt
+controllers/my_controller/data-DESKTOP-*.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Webots local UI state
+worlds/.wbproj
+worlds/.*.wbproj
+
+# Editor / operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
