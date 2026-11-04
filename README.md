@@ -165,9 +165,6 @@ python controllers/my_controller/analyze_log.py controllers/my_controller/logs/r
 - 当前摘要脚本包含停车后的记录；比较跟踪性能时应排除 `state == 10`。到达时间应使用首次完成的时刻，而非日志最后时刻。
 - 传感器出现非有限值时，控制器发送零轮速并记录 `sensor_invalid`。
 
-![Uploading 屏幕截图 2026-11-04 154332.png…]()
-
-
 ## 仿真验证结果
 
 以下为固定路径与当前模型下两次 Webots 运行的对照。误差采用**到预设折线路径最近线段的距离**，排除完成后停车的样本；前后半段按最近线段编号划分。
