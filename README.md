@@ -23,6 +23,7 @@
 ├── .gitignore
 ├── worlds/
 │   ├── wire_car.wbt               # 仿真世界与机器人模型
+│   ├── result.png                 # 轨迹跟踪运行结果截图
 │   └── texture/floor.png          # 地面纹理
 └── controllers/my_controller/
     ├── my_controller.c           # 主循环、设备初始化与日志
@@ -166,6 +167,10 @@ python controllers/my_controller/analyze_log.py controllers/my_controller/logs/r
 - 传感器出现非有限值时，控制器发送零轮速并记录 `sensor_invalid`。
 
 ## 仿真验证结果
+
+运行效果截图：
+
+![轨迹跟踪运行结果](worlds/result.png)
 
 以下为固定路径与当前模型下两次 Webots 运行的对照。误差采用**到预设折线路径最近线段的距离**，排除完成后停车的样本；前后半段按最近线段编号划分。
 
